@@ -25,6 +25,15 @@ enum layer_names {
   _FN3,
   _FN4
 };
+// alt mod-taps
+#define KC_CA LCTL_T(KC_A)
+#define KC_AS LALT_T(KC_S)
+#define KC_GD LGUI_T(KC_D)
+#define KC_SF LSFT_T(KC_F)
+#define KC_SJ RSFT_T(KC_J)
+#define KC_GK RGUI_T(KC_K)
+#define KC_AL LALT_T(KC_L)
+#define KC_CE RCTL_T(KC_ENT)
 // combo list
 enum combos {
   SD_LBR,
@@ -66,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_HOME] = LAYOUT_all(
                                                                                                        KC_MPLY,
     KC_GESC, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-    KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,             KC_ENT,
+    KC_TAB,  KC_CA,   KC_AS,   KC_GD,   KC_SF,   KC_G,    KC_H,    KC_SJ,   KC_GK,   KC_AL,            KC_CE,
     KC_LSPO,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_RSPC,
     KC_LCTL, KC_LALT, KC_LGUI, LT(_FN4, KC_BSPC),TG(_GAME),     LT(_FN3, KC_SPC),    KC_RGUI, KC_LALT, KC_RCTL
 ),
