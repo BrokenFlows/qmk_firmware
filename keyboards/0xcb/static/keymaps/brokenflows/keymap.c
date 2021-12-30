@@ -48,14 +48,14 @@ enum combos {
   DS_FSL
 };
 // combo keys
-const uint16_t PROGMEM sd_combo[] = {KC_S, KC_D, COMBO_END};
-const uint16_t PROGMEM df_combo[] = {KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM sd_combo[] = {KC_AS, KC_GD, COMBO_END};
+const uint16_t PROGMEM df_combo[] = {KC_GD, KC_SF, COMBO_END};
 const uint16_t PROGMEM xc_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM cv_combo[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM ui_combo[] = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM io_combo[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM kl_combo[] = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM jk_combo[] = {KC_SJ, KC_GK, COMBO_END};
+const uint16_t PROGMEM kl_combo[] = {KC_GK, KC_AL, COMBO_END};
 const uint16_t PROGMEM cd_combo[] = {KC_COMM, KC_DOT, COMBO_END};
 const uint16_t PROGMEM ds_combo[] = {KC_DOT, KC_RSPC, COMBO_END};
 // combo result
