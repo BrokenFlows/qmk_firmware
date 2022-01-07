@@ -36,6 +36,8 @@ enum layer_names {
 #define KC_CE RCTL_T(KC_ENT)
 // combo list
 enum combos {
+  NAV_C1,
+  NAV_C2,
   SD_LBR,
   DF_RBR,
   XC_GRV,
@@ -48,6 +50,8 @@ enum combos {
   DS_FSL
 };
 // combo keys
+const uint16_t PROGMEM nav1_combo[] = {KC_I, KC_SJ, KC_AL, COMBO_END};
+const uint16_t PROGMEM nav2_combo[] = {KC_UP, KC_LEFT, KC_RIGHT, COMBO_END};
 const uint16_t PROGMEM sd_combo[] = {KC_AS, KC_GD, COMBO_END};
 const uint16_t PROGMEM df_combo[] = {KC_GD, KC_SF, COMBO_END};
 const uint16_t PROGMEM xc_combo[] = {KC_X, KC_C, COMBO_END};
@@ -60,6 +64,8 @@ const uint16_t PROGMEM cd_combo[] = {KC_COMM, KC_DOT, COMBO_END};
 const uint16_t PROGMEM ds_combo[] = {KC_DOT, KC_RSPC, COMBO_END};
 // combo result
 combo_t key_combos[COMBO_COUNT] = {
+  [NAV_C1] = COMBO(nav1_combo, TG(_FN4)),
+  [NAV_C2] = COMBO(nav2_combo, TG(_FN4)),
   [SD_LBR] = COMBO(sd_combo, KC_LBRC),
   [DF_RBR] = COMBO(df_combo, KC_RBRC),
   [XC_GRV] = COMBO(xc_combo, KC_GRV),
@@ -89,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FN3] = LAYOUT_all(
                                                                                                        RESET,
     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,             _______,
+    _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,             KC_0,
     _______,          _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______,          _______,                   _______, _______, _______, _______
 ),

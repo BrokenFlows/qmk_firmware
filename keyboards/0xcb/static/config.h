@@ -68,6 +68,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BOOTMAGIC_LITE_ROW 0
 #define BOOTMAGIC_LITE_COLUMN 0
 
+/* Mod-Taps */
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TERM 225
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD
+
+
 /* combos */
-#define COMBO_COUNT 10
+#define COMBO_COUNT 12
 #define COMBO_TERM 37
